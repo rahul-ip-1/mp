@@ -5,8 +5,8 @@ import CountdownSection from './components/CountdownSection';
 import GallerySection from './components/GallerySection';
 import MemorySection from './components/MemorySection';
 import GiftSection from './components/GiftSection';
-import CakeSection from './components/CakeSection';
-import Footer from './components/Footer';
+// import CakeSection from './components/CakeSection';
+// import Footer from './components/Footer';
 import FloatingElements from './components/FloatingElements';
 import './styles/App.css';
 
@@ -81,10 +81,10 @@ function App() {
         <GallerySection />
         <MemorySection />
         <GiftSection createHeartConfetti={createHeartConfetti} />
-        <CakeSection />
+        {/* <CakeSection /> */}
       </main>
       
-      <Footer year={currentYear} />
+      {/* <Footer year={currentYear} /> */}
     </div>
   );
 }
