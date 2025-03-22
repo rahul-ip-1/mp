@@ -1,0 +1,171 @@
+.countdown-section {
+  background: linear-gradient(45deg, #fff9fa, #fff);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 92, 141, 0.1);
+  padding: 3rem 2rem;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.countdown-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  margin: 0 1rem 1.5rem;
+  min-width: 100px;
+  position: relative;
+}
+
+.countdown-value {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ff5c8d;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(255, 92, 141, 0.2);
+  padding: 1rem;
+  min-width: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown-value::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 92, 141, 0.3), transparent);
+}
+
+.countdown-label {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.countdown-message {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 92, 141, 0.1);
+  border-bottom: 1px solid rgba(255, 92, 141, 0.1);
+  font-style: italic;
+}
+
+.birthday-message {
+  padding: 2rem;
+  animation: fadeScale 1s forwards;
+}
+
+.birthday-message h3 {
+  font-size: 3rem;
+  color: #ff5c8d;
+  margin-bottom: 1rem;
+}
+
+.birthday-message p {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+.celebration-icon {
+  font-size: 5rem;
+  margin: 1rem 0;
+  animation: bounce 2s infinite;
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .countdown-value {
+    font-size: 2.5rem;
+    min-width: 80px;
+  }
+  
+  .countdown-item {
+    margin: 0 0.7rem 1.2rem;
+    min-width: 80px;
+  }
+  
+  .countdown-message {
+    font-size: 1rem;
+  }
+  
+  .birthday-message h3 {
+    font-size: 2.5rem;
+  }
+  
+  .birthday-message p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-value {
+    font-size: 2rem;
+    min-width: 60px;
+    padding: 0.8rem;
+  }
+  
+  .countdown-item {
+    margin: 0 0.5rem 1rem;
+    min-width: 60px;
+  }
+  
+  .countdown-label {
+    font-size: 0.8rem;
+  }
+  
+  .countdown-message {
+    padding: 0.8rem;
+  }
+  
+  .birthday-message h3 {
+    font-size: 2rem;
+  }
+  
+  .birthday-message p {
+    font-size: 1rem;
+  }
+  
+  .celebration-icon {
+    font-size: 4rem;
+  }
+}

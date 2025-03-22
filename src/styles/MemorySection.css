@@ -1,0 +1,160 @@
+.memory-section {
+  background: linear-gradient(45deg, #fff5fa, #fff);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 92, 141, 0.1);
+  padding: 3rem 2rem;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.memories-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.memory-card {
+  display: flex;
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  text-align: left;
+}
+
+.memory-card.left {
+  transform: translateX(-50px);
+}
+
+.memory-card.right {
+  transform: translateX(50px);
+}
+
+.memory-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.memory-icon {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.memory-content {
+  flex: 1;
+}
+
+.memory-title {
+  font-size: 1.8rem;
+  color: #ff5c8d;
+  margin-bottom: 0.8rem;
+}
+
+.memory-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.special-message {
+  max-width: 800px;
+  margin: 4rem auto 2rem;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #fff, #fff5fa);
+  border-radius: 15px;
+  border: 2px dashed #ffbcd1;
+  box-shadow: 0 10px 25px rgba(255, 92, 141, 0.15);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.special-message.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.message-title {
+  font-size: 2.2rem;
+  color: #ff5c8d;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.message-content {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.message-signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: #ff5c8d;
+  margin-top: 1.5rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .memory-icon {
+    font-size: 2rem;
+    min-width: 50px;
+    margin-right: 1rem;
+  }
+  
+  .memory-title {
+    font-size: 1.5rem;
+  }
+  
+  .message-title {
+    font-size: 1.8rem;
+  }
+  
+  .message-content {
+    font-size: 1rem;
+  }
+  
+  .message-signature {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .memory-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem;
+  }
+  
+  .memory-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .memory-title {
+    font-size: 1.3rem;
+  }
+  
+  .special-message {
+    padding: 1.5rem;
+  }
+  
+  .message-title {
+    font-size: 1.5rem;
+  }
+  
+  .message-signature {
+    text-align: center;
+    padding-right: 0;
+  }
+}
