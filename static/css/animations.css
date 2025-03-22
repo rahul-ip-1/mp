@@ -355,8 +355,6 @@ section.visible {
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1s ease, visibility 1s ease;
-    animation: fadeIn 0.5s ease-in forwards 2s;
 }
 
 .welcome-overlay.show {

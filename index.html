@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday My Love!</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/animations.css">
+    <link rel="stylesheet" href="./static/css/responsive.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <!-- Welcome Animation Overlay -->
     <div id="welcome-overlay" class="welcome-overlay">
@@ -24,17 +28,17 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Floating Elements -->
     <div class="floating-elements">
-        <img src="{{ url_for('static', filename='assets/heart.svg') }}" class="floating-element heart" alt="Heart">
-        <img src="{{ url_for('static', filename='assets/balloon.svg') }}" class="floating-element balloon" alt="Balloon">
-        <img src="{{ url_for('static', filename='assets/heart.svg') }}" class="floating-element heart" alt="Heart">
-        <img src="{{ url_for('static', filename='assets/cake.svg') }}" class="floating-element cake" alt="Cake">
-        <img src="{{ url_for('static', filename='assets/gift.svg') }}" class="floating-element gift" alt="Gift">
-        <img src="{{ url_for('static', filename='assets/balloon.svg') }}" class="floating-element balloon" alt="Balloon">
+        <img src="./static/assets/heart.svg" class="floating-element heart" alt="Heart">
+        <img src="./static/assets/balloon.svg" class="floating-element balloon" alt="Balloon">
+        <img src="./static/assets/heart.svg" class="floating-element heart" alt="Heart">
+        <img src="./static/assets/cake.svg" class="floating-element cake" alt="Cake">
+        <img src="./static/assets/gift.svg" class="floating-element gift" alt="Gift">
+        <img src="./static/assets/balloon.svg" class="floating-element balloon" alt="Balloon">
     </div>
-    
+
     <!-- Audio Control -->
     <div class="audio-control">
         <button id="music-toggle">
@@ -45,19 +49,7 @@
             Your browser does not support the audio element.
         </audio>
     </div>
-
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#intro">Home</a></li>
-            <li><a href="#countdown">Countdown</a></li>
-            <li><a href="#gallery">Memories</a></li>
-            <li><a href="#wishes">Wishes</a></li>
-            <li><a href="#virtual-gifts">Virtual Gifts</a></li>
-            <li><a href="#message">Message</a></li>
-        </ul>
-    </nav>
-
+    
     <!-- Hero Section -->
     <section id="intro" class="hero parallax-bg">
         <div class="overlay"></div>
@@ -75,7 +67,8 @@
                 <div class="ribbon-decoration left"></div>
                 <div class="ribbon-decoration right"></div>
             </div>
-            <p class="subtitle animate-text parallax-element parallax-slow">On this special day, I celebrate the most amazing person in my life.</p>
+            <p class="subtitle animate-text parallax-element parallax-slow">On this special day, I celebrate the most
+                amazing person in my life.</p>
             <button class="cta-button parallax-element parallax-fast" id="start-journey">Start Journey</button>
         </div>
     </section>
@@ -101,7 +94,8 @@
                 <span class="label">Seconds</span>
             </div>
         </div>
-        <p class="countdown-message scroll-transition scale-up" style="transition-delay: 0.5s;">Every second with you makes life beautiful!</p>
+        <p class="countdown-message scroll-transition scale-up" style="transition-delay: 0.5s;">Every second with you
+            makes life beautiful!</p>
     </section>
 
     <!-- Photo Gallery Section -->
@@ -172,7 +166,8 @@
             </div>
             <div class="wish-card scroll-transition from-bottom" style="transition-delay: 0.3s;">
                 <div class="wish-content">
-                    <p>"Another adventure-filled year awaits you. Welcome it with a smile on your face and joy in your heart!"</p>
+                    <p>"Another adventure-filled year awaits you. Welcome it with a smile on your face and joy in your
+                        heart!"</p>
                     <span class="wish-author">- Your Partner</span>
                 </div>
             </div>
@@ -188,8 +183,9 @@
     <!-- Virtual Gifts Section -->
     <section id="virtual-gifts" class="virtual-gifts-section parallax-bg">
         <h2 class="scroll-transition from-top">Special Virtual Gifts For You</h2>
-        <p class="section-intro scroll-transition from-bottom" style="transition-delay: 0.2s;">Choose a gift to unwrap and discover what's inside!</p>
-        
+        <p class="section-intro scroll-transition from-bottom" style="transition-delay: 0.2s;">Choose a gift to unwrap
+            and discover what's inside!</p>
+
         <div class="gifts-container">
             <div class="gift-box scroll-transition scale-up" style="transition-delay: 0.1s;" data-gift="jewelry">
                 <div class="gift-lid"></div>
@@ -201,7 +197,7 @@
                     <p>A symbol of our precious time together</p>
                 </div>
             </div>
-            
+
             <div class="gift-box scroll-transition scale-up" style="transition-delay: 0.2s;" data-gift="flowers">
                 <div class="gift-lid"></div>
                 <div class="gift-box-body">
@@ -212,7 +208,7 @@
                     <p>Like you, always beautiful and brightening my day</p>
                 </div>
             </div>
-            
+
             <div class="gift-box scroll-transition scale-up" style="transition-delay: 0.3s;" data-gift="heart">
                 <div class="gift-lid"></div>
                 <div class="gift-box-body">
@@ -223,7 +219,7 @@
                     <p>My heart belongs to you, today and always</p>
                 </div>
             </div>
-            
+
             <div class="gift-box scroll-transition scale-up" style="transition-delay: 0.4s;" data-gift="star">
                 <div class="gift-lid"></div>
                 <div class="gift-box-body">
@@ -235,21 +231,24 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="special-gift">
-            <div id="special-gift-trigger" class="special-gift-button scroll-transition from-bottom" style="transition-delay: 0.5s;">
+            <div id="special-gift-trigger" class="special-gift-button scroll-transition from-bottom"
+                style="transition-delay: 0.5s;">
                 <i class="fas fa-gift"></i>
                 <span>Special Surprise Gift</span>
             </div>
-            
+
             <div id="special-gift-reveal" class="hidden">
                 <div class="heart-animation-container">
                     <div class="heart-animation"></div>
                 </div>
                 <div class="custom-message">
                     <h3>My Promise To You</h3>
-                    <p>This virtual heart represents my real promise to always love, cherish, and support you. Just as this heart beats for you on this screen, my real heart beats for you every day.</p>
-                    <p>I promise to be there for you, to listen, to care, and to love you more with each passing day.</p>
+                    <p>This virtual heart represents my real promise to always love, cherish, and support you. Just as
+                        this heart beats for you on this screen, my real heart beats for you every day.</p>
+                    <p>I promise to be there for you, to listen, to care, and to love you more with each passing day.
+                    </p>
                 </div>
             </div>
         </div>
@@ -261,9 +260,15 @@
             <h2 class="scroll-transition from-top">A Special Message For You</h2>
             <div class="letter scroll-transition from-bottom" style="transition-delay: 0.3s;">
                 <p>My Dearest,</p>
-                <p>As you celebrate another beautiful year of life, I find myself reflecting on all the joy and happiness you've brought into my world. Your smile brightens my darkest days, your laughter fills my heart with happiness, and your love gives me strength I never knew I had.</p>
-                <p>On your birthday, I want you to know that you are so incredibly special to me. You deserve all the happiness, success, and love that this world has to offer. I am so grateful to be part of your journey and to witness your growth, your kindness, and your beautiful spirit every day.</p>
-                <p>May this year bring you even more amazing adventures, opportunities to shine, and moments of pure joy. I promise to be by your side, cheering you on, supporting your dreams, and loving you endlessly.</p>
+                <p>As you celebrate another beautiful year of life, I find myself reflecting on all the joy and
+                    happiness you've brought into my world. Your smile brightens my darkest days, your laughter fills my
+                    heart with happiness, and your love gives me strength I never knew I had.</p>
+                <p>On your birthday, I want you to know that you are so incredibly special to me. You deserve all the
+                    happiness, success, and love that this world has to offer. I am so grateful to be part of your
+                    journey and to witness your growth, your kindness, and your beautiful spirit every day.</p>
+                <p>May this year bring you even more amazing adventures, opportunities to shine, and moments of pure
+                    joy. I promise to be by your side, cheering you on, supporting your dreams, and loving you
+                    endlessly.</p>
                 <p>Happy Birthday, my love. Here's to you and another year of wonderful memories together.</p>
                 <p class="signature">With all my heart,<br>[Your Name]</p>
             </div>
@@ -277,7 +282,8 @@
             <div class="timeline-item left scroll-transition from-left" style="transition-delay: 0.1s;">
                 <div class="timeline-content">
                     <h3>When We First Met</h3>
-                    <p>The day that changed everything. I still remember how beautiful you looked and how nervous I was.</p>
+                    <p>The day that changed everything. I still remember how beautiful you looked and how nervous I was.
+                    </p>
                 </div>
             </div>
             <div class="timeline-item right scroll-transition from-right" style="transition-delay: 0.2s;">
@@ -320,7 +326,8 @@
             </div>
         </div>
         <h2 class="final-wish scroll-transition from-bottom" style="transition-delay: 0.3s;">Make a Wish!</h2>
-        <button id="blow-candle" class="blow-button scroll-transition scale-up" style="transition-delay: 0.5s;">Blow the Candle</button>
+        <button id="blow-candle" class="blow-button scroll-transition scale-up" style="transition-delay: 0.5s;">Blow the
+            Candle</button>
     </section>
 
     <!-- Footer -->
@@ -330,9 +337,10 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/countdown.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/music.js') }}"></script>
+    <script src="./static/js/script.js"></script>
+    <script src="./static/js/gallery.js"></script>
+    <script src="./static/js/countdown.js"></script>
+    <script src="./static/js/music.js"></script>
 </body>
+
 </html>
