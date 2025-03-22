@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Welcome Animation Overlay -->
+    <div id="welcome-overlay" class="welcome-overlay">
+        <div class="welcome-content">
+            <div class="welcome-text">
+                <h1 class="welcome-header">For My Love</h1>
+                <p class="welcome-message">Every moment with you is a blessing...</p>
+                <div class="heart-container">
+                    <div class="heart-animation-large"></div>
+                </div>
+                <p class="welcome-continue">Click anywhere to continue</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <img src="{{ url_for('static', filename='assets/heart.svg') }}" class="floating-element heart" alt="Heart">
+        <img src="{{ url_for('static', filename='assets/balloon.svg') }}" class="floating-element balloon" alt="Balloon">
+        <img src="{{ url_for('static', filename='assets/heart.svg') }}" class="floating-element heart" alt="Heart">
+        <img src="{{ url_for('static', filename='assets/cake.svg') }}" class="floating-element cake" alt="Cake">
+        <img src="{{ url_for('static', filename='assets/gift.svg') }}" class="floating-element gift" alt="Gift">
+        <img src="{{ url_for('static', filename='assets/balloon.svg') }}" class="floating-element balloon" alt="Balloon">
+    </div>
+    
+    <!-- Audio Control -->
+    <div class="audio-control">
+        <button id="music-toggle">
+            <i class="fas fa-volume-up" id="volume-icon"></i>
+        </button>
+        <audio id="background-music" loop>
+            <source src="https://soundbible.com/mp3/happybirthday-1909347830.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#countdown">Countdown</a></li>
+            <li><a href="#gallery">Memories</a></li>
+            <li><a href="#wishes">Wishes</a></li>
+            <li><a href="#virtual-gifts">Virtual Gifts</a></li>
+            <li><a href="#message">Message</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="intro" class="hero parallax-bg">
+        <div class="overlay"></div>
+        <div class="hearts-decoration">
+            <div class="heart-item parallax-element parallax-slow"></div>
+            <div class="heart-item parallax-element parallax-medium"></div>
+            <div class="heart-item parallax-element parallax-slow"></div>
+            <div class="heart-item parallax-element parallax-fast"></div>
+            <div class="heart-item parallax-element parallax-medium"></div>
+            <div class="heart-item parallax-element parallax-slow"></div>
+        </div>
+        <div class="content">
+            <div class="hero-title-container parallax-element parallax-medium">
+                <h1 class="animate-text">Happy Birthday My Love!</h1>
+                <div class="ribbon-decoration left"></div>
+                <div class="ribbon-decoration right"></div>
+            </div>
+            <p class="subtitle animate-text parallax-element parallax-slow">On this special day, I celebrate the most amazing person in my life.</p>
+            <button class="cta-button parallax-element parallax-fast" id="start-journey">Start Journey</button>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="countdown-section parallax-bg">
+        <h2 class="scroll-transition from-top">Countdown to Your Special Day</h2>
+        <div class="countdown-container">
+            <div class="countdown-box scroll-transition from-bottom" style="transition-delay: 0.1s;">
+                <span id="days">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="countdown-box scroll-transition from-bottom" style="transition-delay: 0.2s;">
+                <span id="hours">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="countdown-box scroll-transition from-bottom" style="transition-delay: 0.3s;">
+                <span id="minutes">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="countdown-box scroll-transition from-bottom" style="transition-delay: 0.4s;">
+                <span id="seconds">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+        <p class="countdown-message scroll-transition scale-up" style="transition-delay: 0.5s;">Every second with you makes life beautiful!</p>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="scroll-transition from-top">Our Beautiful Memories</h2>
+        <div class="gallery-container scroll-transition scale-up">
+            <div class="gallery-nav">
+                <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="gallery-wrapper">
+                <!-- Gallery placeholders - replace with actual image links -->
+                <div class="gallery-item active">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Place your first special moment here</p>
+                    </div>
+                    <p class="caption">Our First Date</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Place your second special moment here</p>
+                    </div>
+                    <p class="caption">Beach Vacation</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Place your third special moment here</p>
+                    </div>
+                    <p class="caption">That Time We Laughed So Hard</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Place your fourth special moment here</p>
+                    </div>
+                    <p class="caption">Our Favorite Restaurant</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Place your fifth special moment here</p>
+                    </div>
+                    <p class="caption">New Year's Eve</p>
+                </div>
+            </div>
+            <div class="gallery-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Wishes Section -->
+    <section id="wishes" class="wishes-section parallax-bg">
+        <h2 class="scroll-transition from-top">Birthday Wishes</h2>
+        <div class="wishes-container">
+            <div class="wish-card scroll-transition from-left" style="transition-delay: 0.1s;">
+                <div class="wish-content">
+                    <p>"May your day be as bright as your smile and as lovely as you. Happy Birthday, my love!"</p>
+                    <span class="wish-author">- Your Love</span>
+                </div>
+            </div>
+            <div class="wish-card scroll-transition from-bottom" style="transition-delay: 0.3s;">
+                <div class="wish-content">
+                    <p>"Another adventure-filled year awaits you. Welcome it with a smile on your face and joy in your heart!"</p>
+                    <span class="wish-author">- Your Partner</span>
+                </div>
+            </div>
+            <div class="wish-card scroll-transition from-right" style="transition-delay: 0.5s;">
+                <div class="wish-content">
+                    <p>"To the one who makes my heart flutter every day. Wishing you endless happiness and love."</p>
+                    <span class="wish-author">- Me</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Gifts Section -->
+    <section id="virtual-gifts" class="virtual-gifts-section parallax-bg">
+        <h2 class="scroll-transition from-top">Special Virtual Gifts For You</h2>
+        <p class="section-intro scroll-transition from-bottom" style="transition-delay: 0.2s;">Choose a gift to unwrap and discover what's inside!</p>
+        
+        <div class="gifts-container">
+            <div class="gift-box scroll-transition scale-up" style="transition-delay: 0.1s;" data-gift="jewelry">
+                <div class="gift-lid"></div>
+                <div class="gift-box-body">
+                    <div class="gift-ribbon"></div>
+                </div>
+                <div class="gift-content">
+                    <i class="fas fa-gem"></i>
+                    <p>A symbol of our precious time together</p>
+                </div>
+            </div>
+            
+            <div class="gift-box scroll-transition scale-up" style="transition-delay: 0.2s;" data-gift="flowers">
+                <div class="gift-lid"></div>
+                <div class="gift-box-body">
+                    <div class="gift-ribbon"></div>
+                </div>
+                <div class="gift-content">
+                    <i class="fas fa-flower-daffodil"></i>
+                    <p>Like you, always beautiful and brightening my day</p>
+                </div>
+            </div>
+            
+            <div class="gift-box scroll-transition scale-up" style="transition-delay: 0.3s;" data-gift="heart">
+                <div class="gift-lid"></div>
+                <div class="gift-box-body">
+                    <div class="gift-ribbon"></div>
+                </div>
+                <div class="gift-content">
+                    <i class="fas fa-heart"></i>
+                    <p>My heart belongs to you, today and always</p>
+                </div>
+            </div>
+            
+            <div class="gift-box scroll-transition scale-up" style="transition-delay: 0.4s;" data-gift="star">
+                <div class="gift-lid"></div>
+                <div class="gift-box-body">
+                    <div class="gift-ribbon"></div>
+                </div>
+                <div class="gift-content">
+                    <i class="fas fa-star"></i>
+                    <p>You're the star that guides me and lights up my life</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="special-gift">
+            <div id="special-gift-trigger" class="special-gift-button scroll-transition from-bottom" style="transition-delay: 0.5s;">
+                <i class="fas fa-gift"></i>
+                <span>Special Surprise Gift</span>
+            </div>
+            
+            <div id="special-gift-reveal" class="hidden">
+                <div class="heart-animation-container">
+                    <div class="heart-animation"></div>
+                </div>
+                <div class="custom-message">
+                    <h3>My Promise To You</h3>
+                    <p>This virtual heart represents my real promise to always love, cherish, and support you. Just as this heart beats for you on this screen, my real heart beats for you every day.</p>
+                    <p>I promise to be there for you, to listen, to care, and to love you more with each passing day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Message Section -->
+    <section id="message" class="message-section parallax-bg">
+        <div class="message-container scroll-transition scale-up">
+            <h2 class="scroll-transition from-top">A Special Message For You</h2>
+            <div class="letter scroll-transition from-bottom" style="transition-delay: 0.3s;">
+                <p>My Dearest,</p>
+                <p>As you celebrate another beautiful year of life, I find myself reflecting on all the joy and happiness you've brought into my world. Your smile brightens my darkest days, your laughter fills my heart with happiness, and your love gives me strength I never knew I had.</p>
+                <p>On your birthday, I want you to know that you are so incredibly special to me. You deserve all the happiness, success, and love that this world has to offer. I am so grateful to be part of your journey and to witness your growth, your kindness, and your beautiful spirit every day.</p>
+                <p>May this year bring you even more amazing adventures, opportunities to shine, and moments of pure joy. I promise to be by your side, cheering you on, supporting your dreams, and loving you endlessly.</p>
+                <p>Happy Birthday, my love. Here's to you and another year of wonderful memories together.</p>
+                <p class="signature">With all my heart,<br>[Your Name]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Timeline Section -->
+    <section id="timeline" class="timeline-section parallax-bg">
+        <h2 class="scroll-transition from-top">Our Journey Together</h2>
+        <div class="timeline">
+            <div class="timeline-item left scroll-transition from-left" style="transition-delay: 0.1s;">
+                <div class="timeline-content">
+                    <h3>When We First Met</h3>
+                    <p>The day that changed everything. I still remember how beautiful you looked and how nervous I was.</p>
+                </div>
+            </div>
+            <div class="timeline-item right scroll-transition from-right" style="transition-delay: 0.2s;">
+                <div class="timeline-content">
+                    <h3>Our First Date</h3>
+                    <p>That coffee shop where we talked for hours and didn't want the day to end.</p>
+                </div>
+            </div>
+            <div class="timeline-item left scroll-transition from-left" style="transition-delay: 0.3s;">
+                <div class="timeline-content">
+                    <h3>First "I Love You"</h3>
+                    <p>The moment we both knew this was something special that would last forever.</p>
+                </div>
+            </div>
+            <div class="timeline-item right scroll-transition from-right" style="transition-delay: 0.4s;">
+                <div class="timeline-content">
+                    <h3>Our Trip To</h3>
+                    <p>When we explored new places and created unforgettable memories together.</p>
+                </div>
+            </div>
+            <div class="timeline-item left scroll-transition from-left" style="transition-delay: 0.5s;">
+                <div class="timeline-content">
+                    <h3>Today</h3>
+                    <p>Celebrating the amazing person you are and looking forward to many more birthdays together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Section with Birthday Cake -->
+    <section id="birthday-wish" class="birthday-wish-section parallax-bg">
+        <div class="cake-container scroll-transition scale-up">
+            <div class="cake">
+                <div class="cake-top"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom"></div>
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+        </div>
+        <h2 class="final-wish scroll-transition from-bottom" style="transition-delay: 0.3s;">Make a Wish!</h2>
+        <button id="blow-candle" class="blow-button scroll-transition scale-up" style="transition-delay: 0.5s;">Blow the Candle</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with <span class="heart">❤</span> for the most special person in my life</p>
+        <p class="copyright">© <span id="current-year"></span> | All Rights Reserved</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/gallery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/countdown.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/music.js') }}"></script>
+</body>
+</html>
