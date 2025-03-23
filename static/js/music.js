@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Function to play background music
     function playMusic() {
+        debugger
         backgroundMusic.play()
             .then(() => {
                 isMusicPlaying = true;
