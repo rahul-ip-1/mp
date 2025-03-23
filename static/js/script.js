@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show surprise message
             setTimeout(() => {
                 const finalWish = document.querySelector('.final-wish');
-                finalWish.textContent = 'Wish Granted! Happy Birthday!';
+                finalWish.textContent = 'Wish Granted! Happy Birthday! Mrunali(Bitu)';
                 finalWish.classList.add('shimmer');
                 
                 // Add additional celebration effects
