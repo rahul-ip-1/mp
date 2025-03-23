@@ -132,11 +132,11 @@ nav ul li a:hover {
 }
 
 .overlay img.second_image {
-    height: 121vh;
+    height: 100vh;
     width: 100%;
     scale: 1;
     object-fit: cover;
-    object-position: 46% -160%;
+    object-position: 100% 0;
 }
 
 /* .overlay img:first-child */
