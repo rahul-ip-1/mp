@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!intervalId) {
             intervalId = setInterval(() => {
                 showNextSlide();
-            }, 5000); // Change slide every 5 seconds
+            }, 50000); // Change slide every 5 seconds
         }
     }
     
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     galleryItems.forEach(item => {
         const img = item.querySelector('img');
         if (img) {
-            img.style.opacity = '0';
+            img.style.opacity = '1';
             img.onload = function() {
                 setTimeout(() => {
                     img.style.transition = 'opacity 0.5s ease';

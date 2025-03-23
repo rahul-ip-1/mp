@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const welcomeOverlay = document.getElementById('welcome-overlay');
     
     // Show welcome overlay after 2 seconds
+    setTimeout(() => {
     welcomeOverlay.classList.add('show');
-    // setTimeout(() => {
-    // }, 0); // Slightly earlier than the CSS animation to ensure smooth transition
+    }, 0); // Slightly earlier than the CSS animation to ensure smooth transition
     
     // Handle click to dismiss welcome overlay
     welcomeOverlay.addEventListener('click', () => {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Set current year in footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+    // document.getElementById('current-year').textContent = new Date().getFullYear();
     
     // Smooth scrolling for navigation links
     document.querySelectorAll('nav a').forEach(anchor => {

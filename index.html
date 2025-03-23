@@ -45,14 +45,15 @@
             <i class="fas fa-volume-up" id="volume-icon"></i>
         </button>
         <audio id="background-music" loop>
-            <source src="https://soundbible.com/mp3/happybirthday-1909347830.mp3" type="audio/mpeg">
+            <source src="./static/assets/music/bday_song.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
-    
+
     <!-- Hero Section -->
-    <section id="intro" class="hero parallax-bg">
-        <div class="overlay"></div>
+    <section id="intro" class="hero parallax-bg" style="background-image: url(./static/assets/images/02.jpg); background-size: cover; background-repeat: no-repeat; background-position: 100%; background-attachment: fixed; ">
+        <!-- <div class="overlay"> -->
+        </div>
         <div class="hearts-decoration">
             <div class="heart-item parallax-element parallax-slow"></div>
             <div class="heart-item parallax-element parallax-medium"></div>
@@ -110,38 +111,60 @@
                 <!-- Gallery placeholders - replace with actual image links -->
                 <div class="gallery-item active">
                     <div class="placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Place your first special moment here</p>
+                        <!-- <i class="fas fa-image"></i> -->
+                        <!-- <p>Place your first special moment here</p> -->
+                        <img src="./static/assets/images/01.jpg" alt="Love">
+                    </div>
+                    <p class="caption">With You</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <!-- <i class="fas fa-image"></i>
+                        <p>Place your second special moment here</p> -->
+                        <img src="./static/assets/images/03.jpg" alt="Love">
                     </div>
                     <p class="caption">Our First Date</p>
                 </div>
                 <div class="gallery-item">
                     <div class="placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Place your second special moment here</p>
+                        <!-- <i class="fas fa-image"></i>
+                        <p>Place your third special moment here</p> -->
+                        <img src="./static/assets/images/04.jpg" alt="Love">
                     </div>
-                    <p class="caption">Beach Vacation</p>
+                    <p class="caption">Angel</p>
                 </div>
                 <div class="gallery-item">
                     <div class="placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Place your third special moment here</p>
+                        <!-- <i class="fas fa-image"></i>
+                            <p>Place your fourth special moment here</p> -->
+                        <img src="./static/assets/images/05.jpg" alt="Love">
                     </div>
-                    <p class="caption">That Time We Laughed So Hard</p>
+                    <p class="caption">Making memories with you</p>
                 </div>
                 <div class="gallery-item">
                     <div class="placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Place your fourth special moment here</p>
+                        <!-- <i class="fas fa-image"></i>
+                        <p>Place your fifth special moment here</p> -->
+                        <img src="./static/assets/images/06.jpg" alt="Love">
+                        <img src="./static/assets/images/06.jpg" alt="Love">
                     </div>
-                    <p class="caption">Our Favorite Restaurant</p>
+                    <p class="caption">You’re the fire</p>
                 </div>
                 <div class="gallery-item">
                     <div class="placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>Place your fifth special moment here</p>
+                        <!-- <i class="fas fa-image"></i>
+                        <p>Place your fifth special moment here</p> -->
+                        <img src="./static/assets/images/07.jpg" alt="Love">
                     </div>
-                    <p class="caption">New Year's Eve</p>
+                    <p class="caption">Cuddles, popcorn, and You</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder">
+                        <!-- <i class="fas fa-image"></i>
+                        <p>Place your fifth special moment here</p> -->
+                        <img src="./static/assets/images/08.jpg" alt="Love">
+                    </div>
+                    <p class="caption">Love at first slice</p>
                 </div>
             </div>
             <div class="gallery-dots">
@@ -150,6 +173,8 @@
                 <span class="dot" data-index="2"></span>
                 <span class="dot" data-index="3"></span>
                 <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="dot" data-index="6"></span>
             </div>
         </div>
     </section>
@@ -160,20 +185,21 @@
         <div class="wishes-container">
             <div class="wish-card scroll-transition from-left" style="transition-delay: 0.1s;">
                 <div class="wish-content">
-                    <p>"May your day be as bright as your smile and as lovely as you. Happy Birthday, my love!"</p>
-                    <span class="wish-author">- Your Love</span>
+                    <p>"Every moment with you feels like a beautiful dream I never want to wake up from."</p>
+                    <span class="wish-author">- Me (For My Love)</span>
                 </div>
             </div>
             <div class="wish-card scroll-transition from-bottom" style="transition-delay: 0.3s;">
                 <div class="wish-content">
                     <p>"Another adventure-filled year awaits you. Welcome it with a smile on your face and joy in your
                         heart!"</p>
-                    <span class="wish-author">- Your Partner</span>
+                    <span class="wish-author">- Me (For My Partner)</span>
                 </div>
             </div>
             <div class="wish-card scroll-transition from-right" style="transition-delay: 0.5s;">
                 <div class="wish-content">
-                    <p>"To the one who makes my heart flutter every day. Wishing you endless happiness and love."</p>
+                    <p>"Every day with you feels like a blessing, and every moment spent with you is my favorite
+                        memory."</p>
                     <span class="wish-author">- Me</span>
                 </div>
             </div>
@@ -245,10 +271,19 @@
                 </div>
                 <div class="custom-message">
                     <h3>My Promise To You</h3>
-                    <p>This virtual heart represents my real promise to always love, cherish, and support you. Just as
-                        this heart beats for you on this screen, my real heart beats for you every day.</p>
-                    <p>I promise to be there for you, to listen, to care, and to love you more with each passing day.
-                    </p>
+                    <p>I want you to know how much I value and respect you. I realize that my possessiveness may have
+                        caused
+                        you frustration, and I truly apologize for that. You mean the world to me, and I never want to
+                        make
+                        you feel suffocated.</p>
+                    <p>I promise to work on controlling these feelings, to give you the space and freedom you deserve,
+                        and
+                        to trust in us and our love. Your happiness is my priority, and I will do everything I can to
+                        make
+                        sure you feel respected, loved, and supported without any pressure.</p>
+                    <p>Thank you for your patience with me, and I’ll keep learning and growing to be the partner you
+                        need. I
+                        love you deeply, and I’m here for you always.</p>
                 </div>
             </div>
         </div>
@@ -260,17 +295,20 @@
             <h2 class="scroll-transition from-top">A Special Message For You</h2>
             <div class="letter scroll-transition from-bottom" style="transition-delay: 0.3s;">
                 <p>My Dearest,</p>
-                <p>As you celebrate another beautiful year of life, I find myself reflecting on all the joy and
-                    happiness you've brought into my world. Your smile brightens my darkest days, your laughter fills my
-                    heart with happiness, and your love gives me strength I never knew I had.</p>
-                <p>On your birthday, I want you to know that you are so incredibly special to me. You deserve all the
-                    happiness, success, and love that this world has to offer. I am so grateful to be part of your
-                    journey and to witness your growth, your kindness, and your beautiful spirit every day.</p>
-                <p>May this year bring you even more amazing adventures, opportunities to shine, and moments of pure
-                    joy. I promise to be by your side, cheering you on, supporting your dreams, and loving you
-                    endlessly.</p>
+                <p>You know, every day with you feels like a new chapter of our love story. And as I think about how far
+                    we've come together, I realize I would choose you again, and again, without a second thought. So, if
+                    life were a book, I'd want to turn every page with you. Here's to our next beautiful chapter, one
+                    where I'm still yours, just as I was from the very start.</p>
+                <p>Every moment with you feels like it's written in the stars, and no matter where life takes us, I know
+                    I'll always want to be by your side. We've built something so beautiful, so strong, and I can’t wait
+                    to see where the next chapter leads us. With you, I find my happiness, my peace, and my future all
+                    wrapped into one.</p>
+                <p>You are my heart's true home, and every page we turn together is a promise of a new adventure. No
+                    matter how many years we share, I’ll never stop wanting to hold your hand through it all today,
+                    tomorrow, and forever. Let’s continue this story, my love, and make every chapter even more
+                    beautiful than the last.</p>
                 <p>Happy Birthday, my love. Here's to you and another year of wonderful memories together.</p>
-                <p class="signature">With all my heart,<br>[Your Name]</p>
+                <p class="signature">With all my heart,<br>Prince</p>
             </div>
         </div>
     </section>
@@ -295,7 +333,7 @@
             <div class="timeline-item left scroll-transition from-left" style="transition-delay: 0.3s;">
                 <div class="timeline-content">
                     <h3>First "I Love You"</h3>
-                    <p>The moment we both knew this was something special that would last forever.</p>
+                    <p>When you proposed to me, it wasn’t just a question it was the moment I realized that the best chapter of my life was about to begin with you.</p>
                 </div>
             </div>
             <div class="timeline-item right scroll-transition from-right" style="transition-delay: 0.4s;">
@@ -330,11 +368,14 @@
             Candle</button>
     </section>
 
+    <div id="wish" class="birthday-wish-section parallax-bg">
+        
+    </div>
     <!-- Footer -->
-    <footer>
+    <!-- <footer >
         <p>Made with <span class="heart">❤</span> for the most special person in my life</p>
         <p class="copyright">© <span id="current-year"></span> | All Rights Reserved</p>
-    </footer>
+    </footer> -->
 
     <!-- Scripts -->
     <script src="./static/js/script.js"></script>

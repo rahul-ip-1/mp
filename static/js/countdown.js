@@ -5,26 +5,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const secondsElement = document.getElementById('seconds');
     const countdownMessage = document.querySelector('.countdown-message');
     
-    // Set the birthday date - you can change this to the actual birth date
-    // Format: Year, Month (0-based, so January is 0), Day, Hour, Minute, Second
-    const birthday = new Date();
-    
-    // Add one month to current date for demonstration
-    birthday.setMonth(birthday.getMonth() + 1);
+    // Set the target date to March 24, 2025
+    const targetDate = new Date('2025-03-24T00:00:00'); // Set to 12:00 AM on March 24, 2025
     
     // Update countdown timer
     function updateCountdown() {
         const currentDate = new Date();
         
-        // If birthday has already occurred this year, set for next year
-        if (birthday < currentDate) {
-            birthday.setFullYear(birthday.getFullYear() + 1);
-        }
+        const timeDifference = targetDate - currentDate;
         
-        const timeDifference = birthday - currentDate;
-        
-        // Check if birthday is today
-        if (timeDifference <= 0 && timeDifference > -86400000) { // Within 24 hours
+        // If the target date has passed
+        if (timeDifference <= 0) {
             displayBirthdayMessage();
             return;
         }
@@ -70,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Display birthday message when it's the birthday
+    // Display birthday message when it's the target date
     function displayBirthdayMessage() {
         if (daysElement) daysElement.textContent = "00";
         if (hoursElement) hoursElement.textContent = "00";
