@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const countdownMessage = document.querySelector('.countdown-message');
     
     // Set the target date to March 24, 2025
-    const targetDate = new Date('2025-03-24T00:00:00'); // Set to 12:00 AM on March 24, 2025
+    const targetDate = new Date('2025-03-23T00:00:00'); // Set to 12:00 AM on March 24, 2025
     
     // Update countdown timer
     function updateCountdown() {
