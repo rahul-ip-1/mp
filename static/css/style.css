@@ -124,9 +124,9 @@ nav ul li a:hover {
 }
 
 .overlay img {
-    height: 90vh;
+    height: 121vh;
     width: 100%;
-    scale: 2;
+    scale: 1.7;
     object-fit: cover;
     object-position: 46% -160%;
 }
