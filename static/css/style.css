@@ -28,23 +28,6 @@
     --parallax-speed-fast: 0.6;
 }
 
-
-.slider-container {
-    width: 100%;
-    overflow: hidden;
-}
-
-.slider {
-    display: flex;
-    transition: transform 1s ease;
-}
-
-.slider img {
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
