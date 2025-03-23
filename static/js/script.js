@@ -17,6 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
             createHeartConfetti();
         }, 500);
     });
+
+
+    const slider = document.querySelector('.slider');
+    const images = document.querySelectorAll('.slider img');
+    let currentIndex = 0;
+
+    function moveToNextSlide() {
+    currentIndex = (currentIndex + 1) % images.length; // Loop back to first image
+    const offset = -currentIndex * 100; // Move to the next slide
+    slider.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Move to the next slide every 3 seconds
+    setInterval(moveToNextSlide, 3000);
+
+    
     
     // Set current year in footer
     // document.getElementById('current-year').textContent = new Date().getFullYear();
