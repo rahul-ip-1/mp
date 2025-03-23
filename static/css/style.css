@@ -123,13 +123,23 @@ nav ul li a:hover {
     color: var(--light-color);
 }
 
-.overlay img:first-child {
+.overlay img.first_image {
     height: 121vh;
     width: 100%;
     scale: 1.7;
     object-fit: cover;
     object-position: 46% -160%;
 }
+
+.overlay img.first_image {
+    height: 121vh;
+    width: 100%;
+    scale: 1;
+    object-fit: cover;
+    object-position: 46% -160%;
+}
+
+/* .overlay img:first-child */
 
 /* Hero Section */
 .hero {
