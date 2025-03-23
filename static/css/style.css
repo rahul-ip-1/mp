@@ -45,7 +45,6 @@
     flex-shrink: 0;
 }
 
-
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
@@ -141,7 +140,7 @@ nav ul li a:hover {
     color: var(--light-color);
 }
 
-.overlay img {
+.overlay img:first-child {
     height: 121vh;
     width: 100%;
     scale: 1.7;
