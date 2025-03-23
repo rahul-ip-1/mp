@@ -135,10 +135,10 @@ nav ul li a:hover {
     overflow: hidden;
 
     background-image: url(/static/assets/images/02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 100% !important;
+    background-attachment: fixed !important;
 }
 
 .hero .overlay {
