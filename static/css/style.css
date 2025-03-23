@@ -126,13 +126,19 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/1600x900/?romance,love');
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/1600x900/?romance,love');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     color: var(--light-color);
     text-align: center;
     position: relative;
     overflow: hidden;
+
+    background-image: url(/static/assets/images/02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-attachment: fixed;
 }
 
 .hero .overlay {
