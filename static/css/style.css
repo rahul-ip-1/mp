@@ -126,18 +126,18 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/static/assets/images/110.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/static/assets/images/0.jpg);
     color: var(--light-color);
     text-align: center;
     position: relative;
     overflow: hidden;
 
     /* background-image: url(/static/assets/images/02.jpg); */
-    background-size: cover !important;
+    /* background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 0 34% !important;
     background-attachment: fixed !important;
-    scale: 1.7;
+    scale: 1.7; */
 }
 
 .hero .overlay {
