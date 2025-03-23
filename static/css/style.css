@@ -135,8 +135,9 @@ nav ul li a:hover {
     /* background-image: url(/static/assets/images/02.jpg); */
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 100% !important;
+    background-position: 0 34% !important;
     background-attachment: fixed !important;
+    scale: 1.7;
 }
 
 .hero .overlay {
