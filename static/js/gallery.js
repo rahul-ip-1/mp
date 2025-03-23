@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!intervalId) {
             intervalId = setInterval(() => {
                 showNextSlide();
-            }, 50000); // Change slide every 5 seconds
+            }, 5000); // Change slide every 5 seconds
         }
     }
     
